@@ -1,8 +1,7 @@
-#!/bin/bash
 #include<stdio.h>
    /**
     * main - Entry point
-    *
+    *use put funct to print out
     *Return:Always 0 (success)
     */
 int main(void)
