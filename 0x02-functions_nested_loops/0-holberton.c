@@ -1,6 +1,8 @@
 #include "holberton.h"
 /**
- *main prints holberton
+ *main - Entry point
+ *
+ * print out holberton
  *
  *return always 0 success
  */
