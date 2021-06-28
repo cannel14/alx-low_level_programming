@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <holberton.h>
 /**
  *swap_int - function that swaps values 
  * int *a - interger of pointer a
@@ -7,9 +7,9 @@
  */
 void swap_int(int *a,int *b)
 {
-int var;
+  int var;
 
-var = *a;
-*a = *b;
-*b = var;
+  var = *a;
+  *a = *b;
+  *b = var;
 }

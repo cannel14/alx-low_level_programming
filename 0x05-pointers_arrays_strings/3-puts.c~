@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <holberton.h>
 /**
  *_puts - prints a string followed by a new line to stdout
  *@ char *str - character pointer str
@@ -6,12 +6,12 @@
  */
 void _puts(char *str)
 {
-int i = 0;
+  int i = 0;
 
-while (str[i])
-{
-_putchar(str[i]);
-i++;
-}
+  while (str[i])
+    {
+      _putchar(str[i]);
+      i++;
+    }
   _putchar('\n');
 }
