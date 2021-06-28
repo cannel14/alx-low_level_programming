@@ -1,15 +1,14 @@
 #include "holberton.h"
 /**
- *swap_int - function that swaps values 
- * int *a - interger of pointer a
- * int *b - interger of pointer b
- *Return: swaping inetgers a and b
+ * swap_int - It has 2 variables
+ * It swaps two values
+ *@a: first value
+ *@b: second value
+ *Return: returns void
  */
-void swap_int(int *a,int *b)
+void swap_int(int *a, int *b)
 {
-int var;
-
-var = *a;
-*a = *b;
-*b = var;
+	int num = *a;
+	*a = *b;
+	*b = num;
 }

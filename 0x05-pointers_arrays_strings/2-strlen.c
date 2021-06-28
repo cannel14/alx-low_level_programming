@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- *_strlen - length of a string
- * @s: character s 
- * Return : length of a string as an interger
+ * _strlen - Returns the length of a string
+ * @s: String to count
+ *
+ * Return: String length
  */
 int _strlen(char *s)
 {
