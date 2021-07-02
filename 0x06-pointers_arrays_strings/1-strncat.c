@@ -1,28 +1,22 @@
 #include "holberton.h"
-#include "stdio.h"
 /**
- **_strncat - concatenates two strings
- *@dest: char
- *@src: char
- *@n: int
- *Return: char
+ * _strncat - It takes 3 arguments
+ * It concatenates two strings
+ * @dest: The destination of string
+ * @src: The string to be copied
+ * @n: The number of bytes to be copied
+ * Return: returns dest
  */
-char *-strncat(char *dest, char *src,int n)
+char *_strncat(char *dest, char *src, int n)
 {
-int i, j;
- i = 0;
- while (dest[i] != '\0')
-   {
-     i++;
-   }
- j=0;
- while(src[j] != '\0' && j < n)
-   {
-     dest[i] = src[j];
-     i++;
-     j++;
-   }
- dest[i] = '\0';
- return(dest);
+	int a, b;
+
+	for  (a = 0; dest[a] != '\0'; a++)
+		;
+		for (b = 0; b < n && src[b] != '\0'; b++)
+		{
+			dest[a + b] = src[b];
+		}
+	dest[a + b] = '\0';
+	return (dest);
 }
-  
