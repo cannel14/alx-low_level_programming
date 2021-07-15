@@ -17,22 +17,15 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *mem;
-	char *filler;
-	unsigned int index;
+char *p;
+unsigned int i;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-
-	mem = malloc(size * nmemb);
-
-	if (!mem)
-		return (NULL);
-
-	filler = mem;
-
-	for (index = 0; index < (size * nmemb); index++)
-		filler[index] = '\0';
-
-	return (mem);
+if (nmemb == 0 || size == 0)
+return (NULL);
+p = malloc(nmemb * size);
+if (p == NULL)
+return (NULL);
+for (i = 0; i < (nmemb * size); i++)
+p[i] = 0;
+return (p);
 }
